@@ -9,6 +9,9 @@ trait ApiControllerTrait
 
     /*
     * @param Request $request
+    * ?limit=20
+    * ?order=
+    * ?
     * @return \Illuminate\Http\JsonResponse
     */
     public function index(Request $request)

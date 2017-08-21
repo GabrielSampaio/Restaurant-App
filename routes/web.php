@@ -22,6 +22,7 @@ $app->group(['prefix' => 'api/v1', 'namespace' => 'Api\V1', 'middleware'=>['auth
     $app->get('restaurants', 'RestaurantsController@index');
     $app->get('restaurants/{id}', 'RestaurantsController@show');
     $app->post('restaurants', 'RestaurantsController@store');
-    $app->put('restaurants/{id}', 'RestaurantsController@update');
+  //  $app->put('restaurants/{id}', 'RestaurantsController@update');
+    $app->post('restaurants/{id}', 'RestaurantsController@update');
     $app->delete('restaurants/{id}', 'RestaurantsController@destroy');
 });
